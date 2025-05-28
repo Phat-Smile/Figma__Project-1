@@ -104,8 +104,8 @@
 @media (max-width: 767.98px) {}
 
 /* Hidden not responsive */
-#header .header-bottom,
+/* #header .header-bottom,
 main,
 #footer {
   display: none;
-}
+} */

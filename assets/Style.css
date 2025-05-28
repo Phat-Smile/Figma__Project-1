@@ -672,7 +672,7 @@ ul {
 }
 
 .footer__top .footer__top-item-1 {
-    width: 336px;
+    max-width: 336px;
 }
 
 .footer__top .link {
