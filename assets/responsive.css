@@ -1,6 +1,6 @@
 /* Pc */
 @media (min-width: 992px) {
-  .moblie-header{
+  .moblie-header {
     display: none;
   }
 }
@@ -95,6 +95,50 @@
     border-radius: 20px 0;
   }
 
+  /* Code hero */
+  .header-bottom {
+    flex-direction: column-reverse;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-bottom-left {
+    width: 75% !important;
+    text-align: center;
+    margin: 22px auto;
+  }
+
+  .header-footer {
+    justify-content: center;
+  }
+
+  .service-body {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    row-gap: 30px;
+
+  }
+
+  .service-body .service-body-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .service__list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .service-card {
+    text-align: start;
+  }
+
+  .selected-allService {
+    display: inline-block;
+    text-align: center;
+  }
 }
 
 /* Tablet */
@@ -104,8 +148,8 @@
 @media (max-width: 767.98px) {}
 
 /* Hidden not responsive */
-/* #header .header-bottom,
-main,
+
+/* main,
 #footer {
   display: none;
 } */
