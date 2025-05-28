@@ -27,11 +27,11 @@
                 </figure>
                 <!-- Nav -->
                 <nav class="navbar">
-                    <ul>
+                    <ul class="navbar__list" id="navbar__list--pc">
                         <li><a href="#header">Home</a></li>
                         <li><a href="#service">Services</a></li>
-                        <li><a href="#!">About</a></li>
-                        <li><a href="#!">Doctors</a></li>
+                        <li><a href="#footer">About</a></li>
+                        <li><a href="#dentist">Doctors</a></li>
                     </ul>
                 </nav>
                 <!-- Selected -->
@@ -57,7 +57,7 @@
         </div>
     </header>
     <!-- Tablet && Moblie Header -->
-    <div class="moblie-header">
+    <section class="moblie-header">
         <!-- Tablet && Moblie menu -->
         <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
         <label for="menu-checkbox">
@@ -69,8 +69,35 @@
         </label>
 
         <!-- Overlay -->
-         <label for="menu-checkbox" class="menu-overlay"></label>
-    </div>
+        <label for="menu-checkbox" class="menu-overlay"></label>
+
+        <!-- MEnu -content -->
+        <section class="menu-drawer">
+            <div class="menu-drawer__top">
+                <!-- Logo -->
+                <figure>
+                    <img src="./assets/icon/Logo.svg" alt=" Logo" class="logo">
+                </figure>
+                <!-- Icon close menu-->
+                <label for="menu-checkbox">
+                    <svg class="close__menu" xmlns="http://www.w3.org/2000/svg" height="30" width="30"
+                        viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+                    </svg>
+                </label>
+            </div>
+            <!-- nav -->
+            <ul id="navbar__list--moblie"></ul>
+            <!-- Use js -->
+            <script>
+                const navPc = document.querySelector("#navbar__list--pc");
+                const navMoblie = document.querySelector("#navbar__list--moblie");
+                // Copy 
+                navMoblie.innerHTML = navPc.innerHTML;
+            </script>
+        </section>
+    </section>
 
     <!-- Main -->
     <main class="main">

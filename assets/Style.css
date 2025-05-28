@@ -90,11 +90,11 @@ ul {
     align-items: center;
 }
 
-.header-top .navbar ul {
+.navbar__list {
     display: flex;
 }
 
-.header-top .navbar a {
+.navbar__list a {
     color: #C9D2DA;
     font-weight: 300;
     font-size: 1.6rem;
@@ -103,7 +103,7 @@ ul {
 
 }
 
-.header-top .navbar a:hover {
+.navbar__list a:hover {
     color: #FFF;
     font-weight: 500;
 }
