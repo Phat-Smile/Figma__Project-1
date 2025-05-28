@@ -3,16 +3,46 @@
 
 /* Tablet && Moblie */
 @media (max-width: 991.98px) {
+
+  /*1. Hidden navbar */
   .navbar {
     display: none;
   }
-  .header-top{
+
+  /*2. Move logo center */
+  .header-top {
     position: relative;
   }
-  .header-top .logo{
+
+  .header-top .logo {
     position: absolute;
     translate: -50% -50%;
     left: 50%;
+  }
+
+  /* 3. Menu-header  */
+  .menu-header__icon {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    color: white;
+  }
+
+  /* 4. Overplay */
+  .menu-overlay {
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    /* Hidden overplay */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  /*5. Check checkbox */
+  .menu-checkbox:checked ~ .menu-overlay{
+    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -21,3 +51,10 @@
 
 /* Moblie */
 @media (max-width: 767.98px) {}
+
+/* Hidden not responsive */
+#header .header-bottom,
+main,
+#footer {
+  display: none;
+}

@@ -9,7 +9,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: Sora;
-    /* width: 100vw; */
+    max-width: 98.98vw;
 }
 
 :root {
@@ -26,9 +26,13 @@ ul {
 }
 
 .main-content {
-    width: 1170px;
+    max-width: 1170px;
     height: 100vh;
     margin: 0 auto;
+}
+
+.main-content * {
+    max-width: 100%;
 }
 
 .selected {
@@ -77,6 +81,7 @@ ul {
     background-color: #10375C;
     padding-top: 30px;
 }
+
 
 /* header-top */
 #header .header-top {
@@ -334,7 +339,7 @@ ul {
 }
 
 .work-body .box .box__body {
-    margin: 42px;
+    padding: 42px;
 }
 
 .work-body .box {
@@ -353,7 +358,6 @@ ul {
 }
 
 .work-body .box p {
-    width: 254px;
     color: #575F66;
     font-size: 1.6rem;
     font-weight: 300;
@@ -407,6 +411,10 @@ ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 34px;
+}
+
+.dentist__body .dentist__card {
+    display: block;
 }
 
 .dentist__body .dentist__card figure {
@@ -534,7 +542,7 @@ ul {
     font-size: 5rem;
     font-weight: 600;
     line-height: 1.2;
-    width: 470px;
+    max-width: 470px;
 }
 
 .body__news-left p {
@@ -606,7 +614,7 @@ ul {
 }
 
 /* ============= Welcome ========= */
-#welcome .main-content{
+#welcome .main-content {
     height: 452px;
     margin-bottom: 170px;
 }
